@@ -17,7 +17,7 @@ caculator_screen.grid(row=0, columnspan = 4, sticky = N+E+W+S, padx = 3, pady= 3
 
 #계산기 버튼들 생성
 #1. 1번째 줄
-btn_clear = Button(root, text = 'Clear', width = 5, height = 2, command =lambda:btn_clear())
+btn_clear = Button(root, text = 'Clear', width = 5, height = 3, command =lambda:btn_clear())
 btn_clear.grid(row=1, columnspan = 4, sticky = N+E+W+S, padx = 3, pady= 3)
 
 # 계산기 단일 버튼 클래스 생성
