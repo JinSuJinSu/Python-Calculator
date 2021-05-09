@@ -14,6 +14,7 @@ btn_input = StringVar()
 caculator_screen = Entry(root, width  = 20, bd = 2, textvariable = btn_input)
 caculator_screen.grid(row=0, columnspan = 4, sticky = N+E+W+S, padx = 3, pady= 3, ipady = 5)
 
+
 #계산기 버튼들 생성
 #1. 1번째 줄
 btn_clear = Button(root, text = 'Clear', width = 5, height = 2, command =lambda:btn_clear())
@@ -67,9 +68,12 @@ btn_addition = CreateButton('+',5,2,lambda:btn_add(),5,3,3,3)
 
 
 
+
 # 계산기 기능들
 
 #1. 클릭 기능
+
+
 def btn_click(btn):
     current = caculator_screen.get()
     caculator_screen.delete(0,END)
@@ -81,7 +85,10 @@ def btn_clear():
     caculator_screen.delete(0,END)
 
 
+
 #3. 더하기 기능
+
+
 def btn_add():
     global first_number
     global calculation
@@ -115,6 +122,8 @@ def btn_div():
     first_number = float(caculator_screen.get())
     calculation = 'division'
     caculator_screen.delete(0,END)
+
+
 
 #7. 계산 결과 기능
 def btn_equal():
