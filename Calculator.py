@@ -147,3 +147,6 @@ def btn_equal():
 
 root.mainloop()
 
+
+# 추후에 검토할 사항이 있는지 확인한다.
+
